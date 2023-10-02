@@ -1,0 +1,71 @@
+Version control helps developers track and manage changes to a software project’s code. (essential as grows). Instead of direct editing official source code, lets developers safely work through BRANCHing and MERGing.
+
+With BRANCHING, a developer duplicates part of the source code (called the repository). *A repository contains all of your project's files, revision history, and collaborator discussion.* The developer can then safely make changes to that part of the code without affecting the rest of the project.
+
+Then, once the developer gets his or her part of the code working properly, he or she can MERGE that code back into the main source code to make it official.
+
+Git -- an application you download to your computer! -- is a specific open-source version control system,  a distributed version control system, which means that the entire codebase and history is available on every developer’s computer, which allows for easy branching and merging.
+
+GitHub -- a website! -- is a for-profit company that offers a cloud-based Git repository-hosting service. Essentially, it makes it a lot easier for individuals and teams to use Git for version control and collaboration. GitHub helps developers store and manage their code, as well as track and control changes to their code. 
+
+pwd stands for “print working directory” (it tells me the file path of the folder I’m in in the terminal I’m in)
+The command “ls –a” (ls=list, a=all) lists all the folders I’m in – hidden etc. I’m using this to see everything in current folder I’m in (when in the terminal)
+
+To open a new "terminal" (the black window from which you code), go to search bar and search for Git Bash -- when options come up open the app by that name. WHENEVER YOU OPEN A GIT BASH TERMINAL, IT OPENS IN YOUR HOME DIRECTORY. (it's a window into your operating system, a portal into your filing system -- a way of navigating, seeing the man behind the curtain)
+
+(the "git init" command created a git (not git HUB) repository on my COMPUTER) (git hub is the website; git is the application on my computer)
+
+(make a mistake? rm -rf "whateverremoving" (spaced just like that, and don't actually use the quote marks) BUT USE CAREFULLY -- dangerous command, can wipe out all if you're not careful and intentional about WHAT rm -rf-ing... (rm = remove r = recursively (in other words, doesn't just delete top level folder, but everything inside it -- PERSONAL would take out bills, etc.) and f=force -- no matter what permissions required. cannot be stopped) -- p.s., no "output" (nothing shown in screen) unless there's an error -- just gives you the next prompt
+
+cd=change directory -- how i'd get where i wanna go from where i am. follow that with space then the folder you want to go in. to follow the path faster, start the folder name (starting at top) EXACTLY as written -- same capitalization -- and tab will "auto complete" (fill in rest of that part) to help get there faster  **NOTE -- if you do "cd" and enter ONLY, it will take you straight to the top...must follow it with something not to end up at the beginning. *** if you want to go to the most recent specific directory you were in, "cd -" should get you there...a second time should get you to the NEXT most recent
+
+(and the up arrow will let you cycle through previous commands...down arrow to get back where you just were)
+
+**USE AUTO COMPLETE REGULARLY -- it's how the computer confirms the file you're looking for is where you're looking for it**
+
+(wanna back it up? type cd .. (no spaces between periods) and it will go back i.e. from desktop/iewetc/coding to desktop/iewetc (can do repeatedly to back up)
+
+prompt= the place where you'd type. COMMAND line prompt is another way of saying it (the more coder-y way)
+
+in git-hub (and some other sites) copy symbol upper right hand corner allows you to copy whole block of code (rather than type each line in yourself) 
+
+mkdir command creates a folder; touch command creates a file
+
+FROM HIS FIRST YOUTUBE VIDEO: BASIC NAVIGATION= pwd, ls, cd
+
+moving into SECOND YOUTUBE VIDEO -- what Tim needs me to be able to do is show kids how to create a github repo correctly. 
+
+HUGE THING -- NEED TO MAKE SURE YOU'RE IN THE RIGHT PLACE BEFORE YOU CREATE A GITHUB REPO; in other words, before you copy the code under "…or create a new repository on the command line" you need to navigate to and create a place to put it that will be appropropriate (not at the top level where you naturally start) (where they want theirs, then create repos, then create my-repo in this case)
+
+once they're past that -- they'll be making changes in the git repo (this is the final piece of the first homework: "Put the text file we created in class for notes in the git repository and push it to GitHub.")
+
+When get there, there are three commands they only really need to deal with: git add, git commit, git push. (The only way they would have known this was retaining (separating it from the mass) and applying it from what was taught in class, but Tim giving me the steps, below)
+
+(1) move notes file into the git repo (physically go to the folder and do it -- could do it in terminal with mv, but it's a little tricky, the command hasn't been taught or emphasized -- Tim doesn't expect this to be used a lot -- so for now, do it the old school way) THIS IS WHERE THE NOTES WILL LIVE FROM HERE ON.
+
+(2) git add is the next command we'll use; git add . will add everything in that folder to your staging area in git (on your computer, not on github website)
+
+(git status is good to then use -- and repeatedly -- to find out what the status (what's been added, if it's ready for commit or not, etc. red not ready, empty, nothing there, green, ready to commit, etc.) is -- almost the WAY you'd use ls to keep checking what's in it. ls everything in folder; git status show you what's added but not committed yet)
+
+so when file is green, it's in the "staging area" -- you're ready to commit. how to:
+(3) git commit -m "(nameyouwantyourcommittobeincludingwhy)" i.e. git commit -m "added file with homework 1" (how would you have known how to do this? not sure -- google, check with classmates, ask when you run into that sort of snag -- but honestly, i had to have Tim walk me through. we're working on it!)
+
+(git status again just to see where we are)
+
+(4) git push (that's it, nothing after) -- when hit enter should get something like this:
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 292.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MBBatty/my-repo.git
+   06f4278..e14a2be  main -> main
+
+that just communicated -- sent changes of new commit -- back to git hub, so next step is to look for it on github 
+
+(5) 
+
+
+(TO DELETE DIRECTORY in github: settings, very bottom, buncha steps to take -- they want it to be hard, it's a BIG error if you don't mean to)
+
